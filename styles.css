@@ -110,3 +110,53 @@ section p, section ul {
   font-size: 16px;
   line-height: 1.6;
 }
+
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin-left: 20px;
+  position: relative;
+}
+
+ul li::before {
+  content: "•";
+  color: #2980b9;
+  position: absolute;
+  left: -15px;
+  top: 0;
+}
+
+.portfolio-items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  background-color: #ecf0f1;
+  padding: 20px;
+  width: 45%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item h3 {
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.portfolio-item p {
+  font-size: 16px;
+  color: #7f8c8d;
+}
+
+.skills ul {
+  margin-top: 10px;
+}
+
+.skills ul li {
+  margin-bottom: 8px;
+}
