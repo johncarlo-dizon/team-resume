@@ -159,3 +159,155 @@ p {
 .skills ul li {
   margin-bottom: 8px;
 }
+
+
+/*added by jc*/
+
+
+header#profile {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+header#profile .profile-img {
+  width: 140px; 
+  height: 140px;
+  border-radius: 50%; 
+  object-fit: cover; 
+  margin-right: 40px; 
+  border: 3px solid #007BFF; 
+}
+
+
+header#profile h1 {
+  font-size: 28px;
+  color: #333; 
+  margin: 0;
+}
+
+header#profile p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555; 
+}
+
+header#profile p a {
+  color: #007BFF; 
+  text-decoration: none;
+}
+
+header#profile p a:hover {
+  text-decoration: underline; 
+}
+
+
+@media (max-width: 768px) {
+  header#profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header#profile .profile-img {
+    margin: 0 auto 20px;
+  }
+}
+
+@media print {
+  body {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .sidebar {
+    display: none; 
+  }
+  .main-content {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+
+
+  .main-content header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    background-color: #f7f7f7;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main-content header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .main-content header .profile-info {
+    flex: 1;
+  }
+
+  .main-content header .profile-info h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .main-content header .profile-info p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #555;
+  }
+
+  .main-content header .profile-info p strong {
+    font-weight: bold;
+  }
+
+
+  .main-content h2 {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    color: #444;
+  }
+
+
+  .portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .portfolio-item img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+  }
+
+  .main-content p, .main-content ul {
+    margin: 5px 0 10px;
+  }
+
+  .main-content ul {
+    padding-left: 20px;
+  }
+
+  .main-content p {
+    color: #555;
+  }
+}
