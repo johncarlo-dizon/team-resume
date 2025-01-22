@@ -10,23 +10,24 @@
   <div class="container">    <!--CONTAINER START-->
 
 
-    <!--SIDEBAR START-->
-    <div class="sidebar">
-      <div class="sidebar-header">
-        <img src="image/joel.png"  class="profile-img">
-        <h2>Joel</h2>
-        <h5>Software Engineer</h5>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">John Carlo Dizon</a></li>
-          <li><a href="joseph.html" >Joseph Lee Basilio</a></li>
-          <li><a href="joel.html" class="active">Joel Dizon</a></li>
-          <li><a href="aaron.html" >Aaron Jireh Avendano</a></li>
-          <li><a href="jomel.html">Jomel Simbillo</a></li>
-        </ul>
-      </nav>
+   <!--SIDEBAR START-->
+   <div class="sidebar">
+    <div class="sidebar-header">
+      <img src="image/Itkid.webp"  class="profile-img">
+      <h2>DevOps </h2>
+      <h5>Resume</h5>
     </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">John Carlo Dizon</a></li>
+        <li><a href="joseph.html" >Joseph Lee Basilio</a></li>
+        <li><a href="joel.html" >Joel Dizon</a></li>
+        <li><a href="aaron.html" >Aaron Jireh Avendano</a></li>
+        <li><a href="jomel.html" >Jomel Simbillo</a></li>
+        <hr>
+        <li><a onclick="printResume()" style="cursor: pointer;">Print Resume</a></li></ul>
+    </nav>
+  </div>
 <!--SIDEBAR END-->
 
 
@@ -36,37 +37,22 @@
 
 
       <header id="profile">
-        <h1>Joel Dizon</h1>
-        <br>
-        <p>Software Engineer</p>
-        <p>Email: joeldizon111111@gmail.com</p>
-        <p>Phone: (555) 123-4567</p>
-        <p>Website: www.joeldizon111111@gmail.com</p>
+        <div>
+          <img src="image/joel.png"  class="profile-img">
+        </div>
+        <div>
+          <h1>Joel Dizon</h1>
+          <br>
+          <p>Software Engineer</p>
+          <p>Email: joeldizon111111@gmail.com</p>
+          <p>Phone: (555) 123-4567</p>
+          <p>Website: www.joeldizon111111@gmail.com</p>
+        </div>
+
       </header>
 
       <hr>
-      
-      <section class="summary" id="portfolio">
-
-        <h2>Portfolio</h2>
-        <p>Here is one of the project I have worked on:</p>
-        <div class="portfolio-items">
-
-          <div class="portfolio-item" >
-          
-            <img src="image/S1.jpeg" alt="" style="width: 200px; height: 100px;">
-            <img src="image/S2.jpeg" alt="" style="width: 200px; height: 100px;">
-            <img src="image/S3.jpeg" alt="" style="width: 200px; height: 100px;">
-          </div>
-          <div class="portfolio-item">
-            <img src="image/S4.jpeg" alt="" style="width: 200px; height: 100px;">
-            <img src="image/S5.jpeg" alt="" style="width: 200px; height: 100px;">
-            <img src="image/S6.jpeg" alt="" style="width: 200px; height: 100px;">
-          </div>
-
-        </div>
-
-    </section>
+ 
 
  
 
@@ -123,6 +109,30 @@
 
 
     </div>
+
+
+         
+    <section class="summary" id="portfolio">
+
+      <h2>Portfolio</h2>
+      <p>Here is one of the project I have worked on:</p>
+      <div class="portfolio-items">
+
+        <div class="portfolio-item" >
+        
+          <img src="image/S1.jpeg" alt="" style="width: 200px; height: 100px;">
+          <img src="image/S2.jpeg" alt="" style="width: 200px; height: 100px;">
+          <img src="image/S3.jpeg" alt="" style="width: 200px; height: 100px;">
+        </div>
+        <div class="portfolio-item">
+          <img src="image/S4.jpeg" alt="" style="width: 200px; height: 100px;">
+          <img src="image/S5.jpeg" alt="" style="width: 200px; height: 100px;">
+          <img src="image/S6.jpeg" alt="" style="width: 200px; height: 100px;">
+        </div>
+
+      </div>
+
+  </section>
       
 
     </div> <!--MAIN CONTENT END-->
@@ -134,5 +144,12 @@
 
 
   </div>  <!--CONTAINER END-->
+
+  
+  <script>
+    function printResume() {
+      window.print();
+    }
+  </script>
 </body>
 </html>
