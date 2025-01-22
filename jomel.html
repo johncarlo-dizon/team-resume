@@ -13,9 +13,9 @@
     <!--SIDEBAR START-->
         <div class="sidebar">
           <div class="sidebar-header">
-            <img src="image/jomel.jpg"  class="profile-img">
-            <h2>Jomel Simbillo</h2>
-            <h5>Game Developer</h5>
+            <img src="image/Itkid.webp"  class="profile-img">
+          <h2>DevOps </h2>
+          <h5>Resume</h5>
           </div>
           <nav>
             <ul>
@@ -24,7 +24,8 @@
               <li><a href="joel.html" >Joel Dizon</a></li>
               <li><a href="aaron.html" >Aaron Jireh Avendano</a></li>
               <li><a href="jomel.html" class="active">Jomel Simbillo</a></li>
-            </ul>
+              <hr>
+              <li><a onclick="printResume()" style="cursor: pointer;">Print Resume</a></li></ul>
           </nav>
         </div>
     <!--SIDEBAR END-->
@@ -34,46 +35,21 @@
     <div class="main-content"> <!--MAIN CONTENT START-->
         
       <header id="profile">
-        <h1>Jomel Simbillo</h1>
-        <br>
-        <p>Game Developer</p>
-        <p>Email: jomelsimbillo123@gmail.com</p>
-        <p>Phone: (555) 123-123</p>
-        <p>Website: www.jomelsimbillo123@gmail.com</p>
-      </header>
-
-      <hr>
-      
-      <section class="summary" id="portfolio">
-
-        <h2>Portfolio</h2>
-        <p>Here is one of the project I have worked on:</p>
-        <div class="portfolio-items">
-
-          <div class="portfolio-item" >
-          
-            <img src="image/S1.jpeg" alt="" style="width: 200px; height: 100px;">
-            <img src="image/S2.jpeg" alt="" style="width: 200px; height: 100px;">
-            <img src="image/S3.jpeg" alt="" style="width: 200px; height: 100px;">
-          </div>
-          <div class="portfolio-item">
-            <img src="image/S4.jpeg" alt="" style="width: 200px; height: 100px;">
-            <img src="image/S5.jpeg" alt="" style="width: 200px; height: 100px;">
-            <img src="image/S6.jpeg" alt="" style="width: 200px; height: 100px;">
-          </div>
-
+        
+        <div>
+          <img src="image/jomel.jpg"  class="profile-img">
         </div>
-
-    </section>
-
- 
-
-
-
-
-
-
-
+        <div>
+          <h1>Jomel Simbillo</h1>
+          <br>
+          <p>Game Developer</p>
+          <p>Email: jomelsimbillo123@gmail.com</p>
+          <p>Phone: (555) 123-123</p>
+          <p>Website: www.jomelsimbillo123@gmail.com</p>
+       </div>
+      </header>
+      <hr>
+    
     <div style=" display: flex;   justify-content: space-between" >
 
       <section class="summary" id="resume" style="width: 40%;">
@@ -93,7 +69,7 @@
         </div>
      
       </section>
-
+      
 
       <section class="summary" id="resume" style="width: 50%;">
 
@@ -116,7 +92,32 @@
         <h2>Contact</h2>
          <p>Email : <strong>jomelsimbillo123@gmail.com</strong></p>
         <p>Facebook : <strong>Jomel Simbillio</strong></p>
+       </section>
+    </div>
+
+        <section class="summary" id="portfolio">
+
+          <h2>Portfolio</h2>
+          <p>Here is one of the project I have worked on:</p>
+          <div class="portfolio-items">
+  
+            <div class="portfolio-item" >
+            
+              <img src="image/S1.jpeg" alt="" style="width: 200px; height: 100px;">
+              <img src="image/S2.jpeg" alt="" style="width: 200px; height: 100px;">
+              <img src="image/S3.jpeg" alt="" style="width: 200px; height: 100px;">
+            </div>
+            <div class="portfolio-item">
+              <img src="image/S4.jpeg" alt="" style="width: 200px; height: 100px;">
+              <img src="image/S5.jpeg" alt="" style="width: 200px; height: 100px;">
+              <img src="image/S6.jpeg" alt="" style="width: 200px; height: 100px;">
+            </div>
+  
+          </div>
+  
      
+
+
       </section>
 
 
@@ -132,6 +133,13 @@
 
 
   </div>  <!--CONTAINER END-->
+
+  <script>
+    function printResume() {
+      window.print();
+    }
+  </script>
+  
 </body>
 </html>
 
