@@ -10,24 +10,26 @@
   <div class="container">    <!--CONTAINER START-->
 
 
+ 
     <!--SIDEBAR START-->
-        <div class="sidebar">
-          <div class="sidebar-header">
-            <img src="image/Balagtas.jpg"  class="profile-img">
-            <h2>Aaron Jireh</h2>
-            <h5>Cyber Security</h5>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="index.html">John Carlo Dizon</a></li>
-              <li><a href="joseph.html" >Joseph Lee Basilio</a></li>
-              <li><a href="joel.html">Joel Dizon</a></li>
-              <li><a href="aaron.html" class="active">Aaron Jireh Avendano</a></li>
-              <li><a href="jomel.html">Jomel Simbillo</a></li>
-            </ul>
-          </nav>
-        </div>
-    <!--SIDEBAR END-->
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <img src="image/Itkid.webp"  class="profile-img">
+        <h2>DevOps </h2>
+        <h5>Resume</h5>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">John Carlo Dizon</a></li>
+          <li><a href="joseph.html" >Joseph Lee Basilio</a></li>
+          <li><a href="joel.html" >Joel Dizon</a></li>
+          <li><a href="aaron.html"  class="active">Aaron Jireh Avendano</a></li>
+          <li><a href="jomel.html" >Jomel Simbillo</a></li>
+          <hr>
+          <li><a onclick="printResume()" style="cursor: pointer;">Print Resume</a></li></ul>
+      </nav>
+    </div>
+<!--SIDEBAR END-->
 
 
 
@@ -36,37 +38,26 @@
 
 
       <header id="profile">
-        <h1>Aaron Jireh Avendano</h1>
-        <br>
-        <p>Cyber Security</p>
-        <p>Email: aaron@gmail.com</p>
-        <p>Phone: (911) 81-2356</p>
-        <p>Website: www.Security.com</p>
+
+        <div>
+          <img src="image/Balagtas.jpg"  class="profile-img">
+        </div>
+        <div>
+          <h1>Aaron Jireh Avendano</h1>
+          <br>
+          <p>Cyber Security</p>
+          <p>Email: aaron@gmail.com</p>
+          <p>Phone: (911) 81-2356</p>
+          <p>Website: www.Security.com</p>
+        </div>
+
+
+    
       </header>
 
       <hr>
       
-      <section class="summary" id="portfolio">
-
-        <h2>Portfolio</h2>
-        <p>Here is one of the project I have worked on:</p>
-        <div class="portfolio-items">
-
-          <div class="portfolio-item" >
-          
-            <img src="image/S1.jpeg" alt="" style="width: 200px; height: 100px;">
-            <img src="image/S2.jpeg" alt="" style="width: 200px; height: 100px;">
-            <img src="image/S3.jpeg" alt="" style="width: 200px; height: 100px;">
-          </div>
-          <div class="portfolio-item">
-            <img src="image/S4.jpeg" alt="" style="width: 200px; height: 100px;">
-            <img src="image/S5.jpeg" alt="" style="width: 200px; height: 100px;">
-            <img src="image/S6.jpeg" alt="" style="width: 200px; height: 100px;">
-          </div>
-
-        </div>
-
-    </section>
+    
 
  
 
@@ -126,6 +117,30 @@
 
 
     </div>
+
+
+
+    <section class="summary" id="portfolio">
+
+      <h2>Portfolio</h2>
+      <p>Here is one of the project I have worked on:</p>
+      <div class="portfolio-items">
+
+        <div class="portfolio-item" >
+        
+          <img src="image/S1.jpeg" alt="" style="width: 200px; height: 100px;">
+          <img src="image/S2.jpeg" alt="" style="width: 200px; height: 100px;">
+          <img src="image/S3.jpeg" alt="" style="width: 200px; height: 100px;">
+        </div>
+        <div class="portfolio-item">
+          <img src="image/S4.jpeg" alt="" style="width: 200px; height: 100px;">
+          <img src="image/S5.jpeg" alt="" style="width: 200px; height: 100px;">
+          <img src="image/S6.jpeg" alt="" style="width: 200px; height: 100px;">
+        </div>
+
+      </div>
+
+  </section>
       
 
     </div> <!--MAIN CONTENT END-->
@@ -137,5 +152,12 @@
 
 
   </div>  <!--CONTAINER END-->
+
+
+  <script>
+    function printResume() {
+      window.print();
+    }
+  </script>
 </body>
 </html>
