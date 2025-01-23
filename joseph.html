@@ -11,22 +11,24 @@
 
 
     <!--SIDEBAR START-->
-        <div class="sidebar">
-          <div class="sidebar-header">
-            <img src="image/MyPic.jpg"  class="profile-img">
-            <h2>Joseph Lee</h2>
-            <p>Data Analyst</p>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="joseph.html">Joseph Lee Basilio</a></li>
-              <li><a href="joel.html">Joel Dizon</a></li>
-              <li><a href="aaron.html">Aaron Jireh Avendano</a></li>
-              <li><a href="jomel.html">Jomel Simbillo</a></li>
-            </ul>
-          </nav>
-        </div>
-    <!--SIDEBAR END-->
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <img src="image/Itkid.webp"  class="profile-img">
+        <h2>DevOps </h2>
+        <h5>Resume</h5>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" >John Carlo Dizon</a></li>
+          <li><a href="joseph.html" class="active">Joseph Lee Basilio</a></li>
+          <li><a href="joel.html" >Joel Dizon</a></li>
+          <li><a href="aaron.html" >Aaron Jireh Avendano</a></li>
+          <li><a href="jomel.html" >Jomel Simbillo</a></li>
+          <hr>
+          <li><a onclick="printResume()" style="cursor: pointer;">Print Resume</a></li></ul>
+      </nav>
+    </div>
+<!--SIDEBAR END-->
 
 
 
@@ -35,38 +37,19 @@
 
 
       <header id="profile">
-        <h1>Joseph Lee Basilio</h1>
-        <br>
-        <p>Data Analyst</p>
-        <p>Email: basiliojoseph550@gmail.com</p>
-        <p>Phone: (101) 87-1000 </p>
-        <p>Website: www.dataSep.com</p>
+        <div class="div"><img src="image/MyPic.jpg"  class="profile-img"></div>
+        <div class="div">        <h1>Joseph Lee Basilio</h1>
+          <br>
+          <p>Data Analyst</p>
+          <p>Email: basiliojoseph550@gmail.com</p>
+          <p>Phone: (101) 87-1000 </p>
+          <p>Website: www.dataSep.com</p></div>
+
       </header>
 
       <hr>
       
-      <section class="summary" id="portfolio">
-
-        <h2>Portfolio</h2>
-        <p>Here is one of the project I have worked on:</p>
-        <div class="portfolio-items">
-
-          <div class="portfolio-item" >
-          
-            <img src="image/S1.jpeg" alt="" style="width: 200px; height: 100px;">
-            <img src="image/S2.jpeg" alt="" style="width: 200px; height: 100px;">
-            <img src="image/S3.jpeg" alt="" style="width: 200px; height: 100px;">
-          </div>
-          <div class="portfolio-item">
-            <img src="image/S4.jpeg" alt="" style="width: 200px; height: 100px;">
-            <img src="image/S5.jpeg" alt="" style="width: 200px; height: 100px;">
-            <img src="image/S6.jpeg" alt="" style="width: 200px; height: 100px;">
-          </div>
-
-        </div>
-
-    </section>
-
+     
  
 
 
@@ -125,6 +108,29 @@
 
 
     </div>
+
+    <section class="summary" id="portfolio">
+
+      <h2>Portfolio</h2>
+      <p>Here is one of the project I have worked on:</p>
+      <div class="portfolio-items">
+
+        <div class="portfolio-item" >
+        
+          <img src="image/S1.jpeg" alt="" style="width: 200px; height: 100px;">
+          <img src="image/S2.jpeg" alt="" style="width: 200px; height: 100px;">
+          <img src="image/S3.jpeg" alt="" style="width: 200px; height: 100px;">
+        </div>
+        <div class="portfolio-item">
+          <img src="image/S4.jpeg" alt="" style="width: 200px; height: 100px;">
+          <img src="image/S5.jpeg" alt="" style="width: 200px; height: 100px;">
+          <img src="image/S6.jpeg" alt="" style="width: 200px; height: 100px;">
+        </div>
+
+      </div>
+
+  </section>
+
       
 
     </div> <!--MAIN CONTENT END-->
@@ -136,5 +142,12 @@
 
 
   </div>  <!--CONTAINER END-->
+
+
+  <script>
+    function printResume() {
+      window.print();
+    }
+  </script>
 </body>
 </html>
